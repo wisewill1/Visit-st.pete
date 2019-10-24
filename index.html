@@ -47,14 +47,65 @@
       h1,h2,h3,h4,h5,h6{
         font-family: 'Rubik' , sans-serif;
       }
+    
+
+     #myDIV img{
+     height:400px;
+     width:400px;
+     }
+     #reviews footer{
+       color:white;
+     }
+
+     /* GRID */
+     #grid , .row { 
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.grid , .column {box-sizing: border-box;
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.grid , .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+ .grid , .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+ .grid , .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+     /* GRID END */
     </style>
-    }
+    
 
-
+  
   </head>
   <body class="is-preload">
     <!-- NAVIGATION--------NAVIGATION--------NAVIGATION -->
-   <nav class="navbar bg-primary navbar-dark navbar-expand-md fixed-top"><a href="#" class="navbar-brand"><i class="fa fa-camera-retro" aria-hidden="true"></i> Cameo</a>
+   <nav class="navbar bg-primary navbar-dark navbar-expand-md fixed-top"><a href="#" class="navbar-brand"><i class="fa fa-camera-retro" aria-hidden="true"></i> Visit St.Petersburg</a>
 <button type="button" class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	<span class="navbar-toggler-icon"></span>
 
@@ -67,19 +118,19 @@
 			<a href="#top" class="nav-link">To the top</a>
 		</li>
 	<li class="nav-item">
-			<a href="#description" class="nav-link">Description</a>
+			<a href="#description" class="nav-link">What is St.Petersburg</a>
 		</li>
 	<li class="nav-item">
-			<a href="#trailer" class="nav-link">Trailer</a>
+			<a href="#trailer" class="nav-link">St.Petersburg Trailer</a>
 		</li>
 	<li class="nav-item">
-			<a href="#showcase" class="nav-link">Showcase</a>
+			<a href="#showcase" class="nav-link"> View St.pete Showcase</a>
 		</li>
 	<li class="nav-item">
 			<a href="#features" class="nav-link">Features</a>
 		</li>
 	<li class="nav-item">
-			<a href="#section-pricing" class="nav-link">Pricing</a>
+			<a href="#section-pricing" class="nav-link">Tour Packages</a>
 		</li>
 	<li class="nav-item">
 			<a href="#reviews" class="nav-link">Reviews</a>
@@ -91,42 +142,45 @@
    <!-- JUMBOTRON--------JUMBOTRON--------JUMBOTRON -->
 <section id="top" class="jumbotron jumbotron-fluid text-white d-flex justify-content-center align-items-center">
 	<div class="container text-center">
-    <h4>A Willie Blackwood portfolio project</h4>
-		<h1 class="display-1 text-primary text-uppercase">Visit<br> St.Petersburg</h1>
-		<p class="display-4 d-none d-sm-block">Capture every moment</p>
-		<p class="lead">Create stunning photos and videos by using the built-in features for enhancement</p>
-		<p class="lead">Share your best shots with your friends and the rest of the world instantly</p>
+    
+		<h1 class="display-1 text-primary text-uppercase"style="margin-top:4%;">Visit<br> St.Petersburg</h1>
+		<p class="display-4 d-none d-sm-block">The Jewel of West Florida</p>
+		<p class="lead">A City that you'll Never forget.</p>
+		<p class="lead">Alasting impression on you and your family.</p>
 	 <p><stong>Download Now:</stong></p>
    
 	 <a href="#" class="btn btn-lg btn-primary"><i class="fab fa-apple"></i> App Store</a>
 
 	 <a href="#" class="btn btn-lg btn-primary"><i class="fab fa-android"></i> Google Play</a>
-	</div>
+  <h4 style="margin-top:10px;">A Willie Blackwood portfolio project</h4>
+  </div>
+  
 </section>
 <div class="container">
   <!-- DESCRIPTION--------DESCRIPTION--------DESCRIPTION -->
 	<section id="description">
-		<h2 class="display-4 text-center">What is Cameo?</h2>
+		<h2 class="display-4 text-center">What is St.Petersburg?</h2>
 		<p>Cameo is an innvative camera app for both IOS and Android that lets you capture the best moments in life, either on still photos or video.Cameo has many useful features to enhance the photos, videos with editing tools, filters and effects.And when you're done you can easily share your result with your friends and the rest of the world through Instagram</p>
 		<p>Cameo has been designed from the bottom up by photography experts and award-winning app developers to make sure you get the best camera app ever created. We are continuously improving the app with new features - this is just the begining.</p>
 	</section>
 	<section id="trailer">
-		<h2 class="display-4 text-center">Cameo Trailer</h2>
-		<p class="text-center">Watch our Cameo trailer below to learn how Cameo works?</p>
-		<div class="embed-responsive embed-responsive-16by9">
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/hRa6_jxTqSs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		</div>
+		<h2 class="display-4 text-center">St.Petersburg Trailer</h2>
+		<p class="text-center"><span style="text-decoration:underline; font-size:1.5em">Click Image Below</span><br>Watch our St.Petersburg,fl Trailer</p>
+		<div>
+     <a href="https://youtu.be/T0VcJ9Qd_AM">
+      <img class="d-block img-fluid" width="100%" height="600px" src="images/thumbs/tour.webp"></a>
+    </div>
      </section>
 
 
     
     
-    </section>
+  </section>
 <!-- SHOWCASE--------SHOWCASE--------SHOWCASE -->
      <section id="showcase">
 
-     	<h2 class="display-4 text-center">Cameo in action</h2>
-     	<p class="text-center">Examples of how and where you can use Cameo.</p>
+     	<h2 class="display-4 text-center">St.Petersburg,Fl The Living City</h2>
+     	<p class="text-center">St.Petersburg in Motion.</p>
 
      	<div id="carousel" class="carousel slide" data-ride="carousel">
      	<ol class= "carousel-indicators">
@@ -137,31 +191,39 @@
      	</ol>
      	<div class="carousel-inner" role="listbox">	
          <div class="carousel-item active"> 
-          <img src="images\showcase01.jpg" alt="slide #1" class="d-block img-fluid">
+          <img src="images/thumbs/sp-pier1.jpg" alt="slide #1" class="d-block img-fluid">
           <div class="carousel-caption">
-          	<h3 class="display-4">At-Night</h3>
-          	<p> Use Cameo when going out with frinds.</p>
+          	<h3 class="display-4">The St.Pete Pier Comming 2020</h3>
+            <p> The Crown Jewel of St.Petersburg Returns.</p>
+            <a href="https://youtu.be/TtSPXHRs3VQ" class="btn btn-sm btn-info mt-auto">See The Pier Progress
+             ...</a>
          </div>
         </div>  	
          <div class="carousel-item"> 
-          <img src="images\showcase02.jpg" alt="slide #2" class="d-block img-fluid">
+          <img src="images/thumbs/rays.jpg" alt="slide #2" class="d-block img-fluid" style="margin-top:-8%;">
           <div class="carousel-caption">
-          	<h3 class="display-4">Outside</h3>
-          	<p> Use Cameo outside when hiking in nature.</p>
+          	<h3 class="display-4">Tropicana Field</h3>
+            <p> They may be the Tampa bay Rays but they play in St.Petersburg.</p>
+            <a href="https://youtu.be/hbQFIUOot_E" class="btn btn-sm btn-info mt-auto">Take A Tour of Tropicana Field
+              ...</a>
           </div>
          </div>
              <div class="carousel-item"> 
-          <img src="images\showcase03.jpg" alt="slide #3" class="d-block img-fluid">
+          <img src="images/thumbs/skylinesp.webp" alt="slide #3" class="d-block img-fluid"style="width:100%; height:100%;margin-top:-20%;">
           <div class="carousel-caption">
-          	<h3 class="display-4">In the sun</h3>
-          	<p> Use Cameo when even with strong and direct sun.</p>
+          	<h3 class="display-4">St.Pete Skyline.</h3>
+            <p> A City Beautiful From Any Angle.</p>
+            <a href="https://youtu.be/TesBSnqMvsE" class="btn btn-sm btn-info mt-auto">Sky View Of St.Petersburg,Fl
+              ...</a>
           </div>
              </div>
              <div class="carousel-item"> 
-          <img src="images/showcase04.jpg" alt="slide #4" class="d-block img-fluid">
+          <img src="images/thumbs/central_wide.jpg" alt="slide #4" class="d-block img-fluid" style="width:100%; height:100%;margin-top:-15%;">
           <div class="carousel-caption">
-            <h3 class="display-4">In the distance</h3>
-            <p> Use Cameo to take clear photos of objects far away.</p>
+            <h3 class="display-4">Central Ave</h3>
+            <p> At The Heart of the City Central Ave is the Main Artery.</p>
+            <a href="https://youtu.be/LFSCrPOtNHU" class="btn btn-sm btn-info mt-auto">Take A Tour of Tropicana Field
+              ...</a>
           </div>
          </div>
          
@@ -179,93 +241,122 @@
      	</div></div>
      </section>
      <!-- FEATURES--------------FEATURES--------FEATURES -->
-     <section id="features"> 
+     <section id="features" style="padding:10px;"> 
      <h2 class="display-4 text-center">Features</h2>
      <div class="row">
       <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5">
-        <i class="fas fa-paint-brush"></i>
-        <h3 class="h4 mb-4 text-center">Enhance your photos</h3>
-        <p>Easily enhance your photos with a selection of editing tools, filters and effects.</p>
-        <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
-      </div>
+        <i class="fas fa-camera"></i>
+        <h3 class="h4 mb-4 text-center">St.Petersburg in Pictures</h3>
+        <p>So Many to Choose from here are the best.</p>
+        <a  class="btn btn-sm btn-info mt-auto"  onclick="myFunction()" style="color:white;">Read more...</a>
+       </div>
+      
       <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5">
         <i class="fas fa-video"></i>
-        <h3 class="h4 mb-4 text-center">Also made for video</h3>
-        <p>With Cameo get dedicated video effects like slow motion, timelaps and transition.</p>
-        <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
+        <h3 class="h4 mb-4 text-center">See St.Petersburg in Video</h3>
+        <p>Youtube's View of St.Petersburg.</p>
+        <a href="https://www.youtube.com/results?search_query=st.petersburg%2Cfl" class="btn btn-sm btn-info mt-auto">Click to View...</a>
       </div>
-      <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5">
-        <i class="fab fa-instagram"></i>
-        <h3 class="h4 mb-4 text-center">Share on Instagram</h3>
-        <p>You can easily share your photos with your friends and the rest of the world on Instagram.</p>
-        <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a></div>
       <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5">
         <i class="fas fa-mobile-alt"></i>
         <h3 class="h4 mb-4 text-center">Works on all devices</h3>
         <p>Cameo works on all platforms and all devices no matter the size of your device.</p>
-        <a href="#" class="btn btn-sm btn-info mt-auto">Read more...</a>
+        <a href="https://www.instagram.com/stpetefl/" class="btn btn-sm btn-info mt-auto">Go to IG...</a>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-3 d-flex flex-column align-items-center mb-5">
+        <div class="row"><i class="fas fa-baseball-ball" style="margin-right:8px;">   </i><i class="fas fa-futbol"></i></div>
+        <h3 class="h4 mb-4 text-center">Local Sports</h3>
+        <p>Tampa Bay Rays and the Tampa Bay Rowdies Play in St.Petersburg.</p>
+        <a href="" class="btn btn-sm btn-info mt-auto">Check out sports...</a>
+      </div>
+      
+    </div>
+    <div id="myDIV" style="display:none;">
+      <div class="row"style="margin-left:5%; margin-right:5%;" >
+        <article class="item thumb span-1">
+        <h2>Central Avenue(Downtown St.Petersburg</h2>
+        <a href="images/thumbs/central-avenue.jpg" class="image"><img src="images/thumbs/central-avenue.jpg" alt=""style="margin:5px;"></a>
+        </article>
+
+        <article class="item thumb span-1">
+        <h2>Tampa Bay Rowdies game</h2>
+        <a href="images/thumbs/rowdies-fan.jpg" class="image"><img src="images/thumbs/rowdies-fan.jpg" alt=""style="margin:5px;"></a>
+        </article>
+
+        <article class="item thumb span-1">
+        <h2>The Sunshine Skyway Bridge</h2>
+        <a href="images/thumbs/sunshine-bridge.jpg" class="image"><img src="images/thumbs/sunshine-bridge.jpg" alt=""style="margin:5px;"></a>
+        </article>
+
+        <article class="item thumb span-1">
+          <h2>Tampa Bay Rays Baseball</h2>
+          <a href="images/thumbs/tampa-bay-rays.jpg" class="image"><img src="images/thumbs/tampa-bay-rays.jpg" alt="" style="margin:5px;"></a>
+        </article>
       </div>
     </div>
+    
      </section>
 
 <!-- PRICING--------PRICING--------PRICING -->
      <section id="section-pricing">
-       <h2 class="display-4 text-center">Choose your plan</h2>
+       <h2 class="display-4 text-center">St.Petersburg,Fl Tours</h2>
        <div class="row">
        <div class="col-12 col-md-4 mb-4">
        <div class="card card-outline-success">
       <div class="card-header bg-success text-white text-center">
-          <h2>Starter</h2>
-          <h4>Free</h4>
+          <h2>Virtual Tour</h2>
+          <h4>Free / email sign up</h4>
         </div>
         <div class="card-body">
-          <p class="card-text">Perfect if you only take pictures for fun.</p>
+          <p class="card-text">Perfect if you want a quick glimpse into St.Petersburg city life.</p>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><i class="fas fa-paint-brush"></i> Enhance your photos and videos</li>
-          <li class="list-group-item"><i class="fab fa-instagram"></i> Share on Instagram</li>
+          <li class="list-group-item"><i class="fas fa-vr-cardboard"></i> Give you a virtual guide of things that may interest you.</li>
+          <li class="list-group-item"><i class="fas fa-vr-cardboard"></i> A virtual guide 10 of the most popular sites in and around Downtown St.Petersburg</li>
         </ul>
         <div class="card-footer text-center">
-          <a href="#" class="btn btn-success btn-lg">Select Plan</a>
+          <a href="#" class="btn btn-success btn-lg">Select Tour</a>
         </div>
        </div>
       </div>
       <div class="col-12 col-md-4 mb-4">      
        <div class="card card-outline-warning">
         <div class="card-header bg-warning text-white text-center">
-          <h2>Semi-pro</h2>
-          <h4>$1.99 / month</h4>
+          <h2>Half a day Tour</h2>
+          <h4>$250 per person / Day </h4>
+          <p style="font-size:.8em;">11am-5pm</p>
         </div>
         <div class="card-body">
-          <p class="card-text"><p class="card-text">Perfect if you're a semi-pro photographer.</p>
+          <p class="card-text"><p class="card-text">Perfect for someone looking to go beyond the virtual and get their feet wet<br><span style="font-size:.7em;">(Transportation provided by us)</span></p>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><i class="fas fa-paint-brush"></i> Enhance your photos and videos</li>
-          <li class="list-group-item"><i class="fab fa-instagram"></i> Share on Instagram</li>
-          <li class="list-group-item"><i class="fas fa-cogs"></i> Advanced settings</li>
+          <li class="list-group-item"><i class="fas fa-directions"></i> Tour of the top Selfie spots in st.Petersburg</li>
+          <li class="list-group-item"><i class="far fa-eye"></i> Go site seeing to 5 sites in and around downtown St.Petersburg</li>
+          <li class="list-group-item"><i class="fas fa-bus-alt"></i> An evening tour around St.Petersburg,fl</li>
         </ul>
         <div class="card-footer text-center">
-          <a href="#" class="btn btn-warning btn-lg ">Select Plan</a>
+          <a href="#" class="btn btn-warning btn-lg ">Select Tour</a>
         </div>
        </div>
       </div>
       <div class="col-12 col-md-4 mb-4">
        <div class="card card-outune-danger">
         <div class="card-header bg-danger text-white text-center">
-          <h2>Pro</h2>
-          <h4>$4.99 / month</h4>
+          <h2>All Day Tour</h2>
+          <h4>$500 per person / Day</h4>
+          <p style="font-size:.8em;">11am-11pm</p>
         </div>
         <div class="card-body">
-          <p class="card-text">Perfect if you're a pro photographer.</p>
+          <p class="card-text">Perfect for those who want to breath the life of St.Petersburg,fl</p>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><i class="fas fa-paint-brush"></i> Enhance your photos and videos</li>
-          <li class="list-group-item"><i class="fab fa-instagram"></i> Share on Instagram</li>
-          <li class="list-group-item"><i class="fas fa-cogs"></i> Advanced settings</li>
-          <li class="list-group-item"><i class="fas fa-cloud-upload-alt"></i> Cloud storage</li>
+          <li class="list-group-item"><i class="fas fa-utensils"></i> Taste of St.Petersburg,br><span style="font-size:.7em;">(Enjoy Breakfast,Lunch and Dinner throughout the tour)</span></li>
+          <li class="list-group-item"><i class="fas fa-anchor"></i> <i class="fas fa-fish"></i> Afternoon Fishing trip off the Florida Coast</li>
+          <li class="list-group-item"><i class="fas fa-directions"></i> Site seeing and visiting the most popular spots around St.Petersburg,fl<br><span style="font-size:.7em;">(10+ locations)This includes 2 Museums and several historic sites</span></li>
+          <li class="list-group-item"><i class="fas fa-bus-alt"></i> <i class="fas fa-glass-cheers"></i> Evening dinning and pub crawl</li>
         </ul>
         <div class="card-footer text-center">
-          <a href="#" class="btn btn-danger btn-lg">Select Plan</a>
+          <a href="#" class="btn btn-danger btn-lg">Select Tour</a>
         </div>
        </div>
       </div>
@@ -275,33 +366,33 @@
      <section id="reviews">
        <h2 class="display-4 text-center">Reviews</h2>
        <div class="row">
-      <div class="col-12 col-md-6 col-lg-3"> 
+      <div class="col-12 col-md-6 col-lg-3" style="margin-top:-4%; align-content: center;"> 
         <blockquote class="blockquote p-3">
-         <p><i class="fas fa-quote-left"></i> I have tried many different camera apps on the market, but with Cameo I am able to use the editing tools, filters and effects that I want in a creative and easy way. <i class="fas fa-quote-right"></i></p>
-         <footer class="blockquote-footer">Marc Jhonson<time datetime="2018-10-20">(October 20 2018)</time>
+         <p><img src="images/thumbs/hopwom.jpg" alt="" style="margin:5px;border-radius:60%; width:280px; height:265px; object-fit:contain; text-align: center;"> <br><i class="fas fa-quote-left"></i>  I Feel refreshed everytime I leave.  <i class="fas fa-quote-right"></i></p>
+         <footer class="blockquote-footer">Deby Austin<time datetime="2018-10-20">(October 20, 2019)</time>
          </footer>
        </blockquote>
      </div>
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-md-6 col-lg-3" style="margin-top:-4%;">
        <blockquote class="blockquote p-3">
-         <p><i class="fas fa-quote-left"></i> I use the cloud storage feature of Cameo to have a backup of all my photos and videos. I find that feature incredibly valuable. <i class="fas fa-quote-right"></i></p>
-         <footer class="blockquote-footer">Julia Stylz<time datetime="2018-6-23">(June 23 2018)</time>
+         <p><img src="images/thumbs/hipwom2.jpg" alt="" style="margin:5px;border-radius:50%; width:250px; height:250px; object-fit:contain;"> <br><i class="fas fa-quote-left"></i> It doesn't matter if you are comming alone, with a group of friends or with your family; All of which I have done. This is a great tour group. <i class="fas fa-quote-right"></i></p>
+         <footer class="blockquote-footer">Julia Stylz<time datetime="2018-6-23">(June 23, 2019)</time>
          </footer>
        </blockquote>
       </div>
-      <div class="col-12 col-md-6 col-lg-3">
+      <div class="col-12 col-md-6 col-lg-3"style="margin-top:-4%;">
        <blockquote class="blockquote p-3">
-         <p><i class="fas fa-quote-left"></i> Truely the best gift that I could have ever gotten.Thanks dad! <i class="fas fa-quote-right"></i></p>
-         <footer class="blockquote-footer">Jaelin Black<time datetime="2018-09-7">(September 7 2018)</time>
+         <p><img src="images/thumbs/hipman2.jpg" alt="" style="margin:5px;border-radius:100%; width:250px; height:250px; object-fit:contain;"> <br><i class="fas fa-quote-left"></i> Everything that you would want and more than what you would need from a tour guide company.<i class="fas fa-quote-right"></i></p>
+         <footer class="blockquote-footer">Dexter Morgan<time datetime="2018-09-7">(September 7, 2019)</time>
          </footer>
        </blockquote>
       </div>   
       
-       <div class="col-12 col-md-6 col-lg-3">
+       <div class="col-12 col-md-6 col-lg-3" style="margin-top:-4%;">
        <blockquote class="blockquote p-3">
 
-         <p><i class="fas fa-quote-left"></i> I thought that the app worked well befor the updates. I still like it better than anything out there. <i class="fas fa-quote-right"></i></p>
-         <footer class="blockquote-footer">Demetry Putin<time datetime="2018-1-28">(January 28 2018)</time>
+         <p><img src="images/thumbs/photo-1512794268250-65fd4cd7441f.jpg" alt="" style="margin:5px;border-radius:50%; width:250px; height:250px; object-fit:contain;"><br> <i class="fas fa-quote-left"></i> Great experience I use this "Visit St.Petersburg" tour group everytime I visit. <i class="fas fa-quote-right"></i></p>
+         <footer class="blockquote-footer">Demetry Putin<time datetime="2018-1-28">(January 28, 2019)</time>
          </footer>
        </blockquote>
       </div>
@@ -313,8 +404,8 @@
 <section id="newsletter" class="bg-secondary">
   <div class="container"> 
   <form class="py-5 text-white">
-    <h2 class="text-center">Sign-up for our newsletter</h2>
-    <p>Recieve the latest news and offers by sigining up to our newsletter</p>
+    <h2 class="text-center">Sign-up for The Visit St.Petersburg Newsletter</h2>
+    <p>Recieve the latest updates from Visit St.Pete</p>
   <div class="row">
    <div class="col-12 col-sm-6 col-md-6">
     <div class="form-group">
@@ -372,7 +463,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
   </section>
 <!-- ADDED ADDED ADDED ADDED ADDED ADDED -->
 <div id="wrapper">
-   <section id="main">
+  <section id="main">
 
             <!-- Items -->
               <div class="items">
@@ -381,12 +472,14 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                   <h1>St.Petersburg,Fl</h1>
                   <p>A world onto itself.</p>
                 </div>
-
+          <article><a href="images/thumbs/central-avenue.jpg" class="image"><img src="images/thumbs/central-avenue.jpg" alt=""
+                style="width:100%"></a></article>
                 <article class="item thumb span-1">
-                  <h2>Vivacios Night Life</h2>
+                  <h2>Good times</h2>
                   <a href="images/thumbs/spnightlife4.jpg" class="image"><img src="images/thumbs/spnightlife4.jpg" alt=""></a>
                 </article>
-
+          <article><a href="images/thumbs/central-avenue.jpg" class="image"><img src="images/thumbs/central-avenue.jpg" alt=""
+                style="width:100%"></a></article>
                 <article class="item thumb span-2">
                   <h2>Beautiful no matter the time of day</h2>
                   <a href="images/thumbs/spnight3.jpg" class="image"><img src="images/thumbs/spnight3.jpg" alt=""></a>
@@ -423,7 +516,34 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
                 </article>
 
               </div>
-
+ 
+     <div class="row" id="grid">
+      <div class="column" class="grid">
+        <img src="images/showcase03.jpg" style="width:100%">
+        <img src="images/showcase03.jpg" style="width:100%">
+        <img src="images/showcase02.jpg" style="width:100%">
+        
+      </div>
+      <div class="column">
+        <img src="images/showcase03.jpg" style="width:100%">
+        <img src="images/showcase02.jpg" style="width:100%">
+        <img src="images/showcase04.jpg" style="width:100%">
+        
+      </div>
+      <div class="column">
+        <img src="images/showcase03.jpg" style="width:100%">
+        <img src="images/showcase02.jpg" style="width:100%">
+        <img src="images/showcase04.jpg" style="width:100%">
+        
+      </div>
+      <div class="column">
+        <img src="images/showcase03.jpg" style="width:100%">
+        <img src="images/showcase02.jpg" style="width:100%">
+        <img src="images/showcase04.jpg" style="width:100%">
+        
+      </div>
+    </div>
+  
             <!-- Items -->
               <div class="items">
 
@@ -439,8 +559,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
 
               </div>
 
-          </section>
-
+  </section>
 </div>
 
   <!-- FOOTER----FOOTER----FOOTER-----FOOTER -->
@@ -483,9 +602,9 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
  <div class="col-12 col-sm-6 col-md-3">
    <h6>Our location:</h6>
     <address>
-      <strong>Cameo</strong><br>
-      350 5th Avenue<br>
-      New York,NY 10118<br>
+      <strong>Visit St.Petersburg</strong><br>
+      Central Avenue<br>
+      St.Petersburg, Florida<br>
       <i class="fas fa-phone"></i> <span class="sr-only">Telephone</span><a href="tel:+19415561787">(941)5561787</a><br>
 
        <i class="fas fa-at"></i> <span class="sr-only">Email</span><a href="mailto:info@cameo.com">info@cameo.com</a>
@@ -495,7 +614,7 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
  <div class="row">
   <div class="col-12 col-sm-6 col-md-9 col-lg-9">
     <ul class="list-inline">
-      <li class="list-inline-item">&copy;2018 Cameo Inc</li>
+      <li class="list-inline-item">&copy;2019 Visit St.Petersburg Inc</li>
       <li class="list-inline-item"> All rights reserved.</li>
       <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#modal">Terms of use and privacy policy</a></li>
     </ul>
@@ -540,16 +659,23 @@ The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for t
         var scroll = new SmoothScroll('a[href*="#"]');
       });
       
+      function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display = "block") {
+            x.style.display === "none";
+          } else {
+            x.style.display = "none";
+          }
+        }
     </script>
     <!-- ADDED SCRIPT -->
-    <script>
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    </script>
-  
+    </body>
   </body>
 </html>

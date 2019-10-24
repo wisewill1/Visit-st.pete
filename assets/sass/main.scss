@@ -113,7 +113,7 @@
 		background-repeat: repeat, no-repeat, auto;
 		position: relative;
 		background-color: #150C07;
-		line-height: 1.75em;
+	    line-height: 1.75em;
 		overflow-x: hidden;
 		overflow-y: auto;
 
@@ -354,7 +354,7 @@
 					line-height: 1em;
 				}
 
-				p {
+				p { 
 					font-size: 1.25em;
 					line-height: 1.5em;
 					margin: 0.5em 0 0 0;
@@ -369,7 +369,7 @@
 				cursor: default;
 
 				h2 {
-					position: absolute;
+					
 					bottom: 0;
 					left: 0;
 					background: rgba(18, 21, 29, 0.85);
